@@ -6,12 +6,17 @@
 }
 
 body{
-  background: linear-gradient(135deg, #0d1117, #1f3a8a);
-  color:#fff;
+  margin:0;
+  min-height:100vh;
   display:flex;
   justify-content:center;
-  min-height:100vh;
+  color:#fff;
+
+  background:
+    radial-gradient(circle at 30% 20%, rgba(0,140,255,.45), transparent 45%),
+    linear-gradient(135deg, #0a0f1a, #0d1117);
 }
+
 
 .app{
   width:100%;
@@ -178,6 +183,7 @@ body{
   font-size:13px;
   margin-bottom:6px;
 }
+
 
 
 
