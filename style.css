@@ -6,7 +6,7 @@
 }
 
 body{
-  background: linear-gradient(135deg, #0d1117, #1f3a8a);
+  background: linear-gradient(135deg, #0d1117, #00c6ff);
   color:#fff;
   display:flex;
   justify-content:center;
@@ -178,5 +178,6 @@ body{
   font-size:13px;
   margin-bottom:6px;
 }
+
 
 
