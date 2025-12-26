@@ -1,0 +1,180 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0e0e0e;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  min-height:100vh;
+}
+
+.app{
+  width:100%;
+  max-width:420px;
+  padding:20px;
+}
+
+/* top bar */
+.top-bar{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+
+.top-bar button{
+  position:relative;
+  width:44px;
+  height:44px;
+  border:none;
+  border-radius:12px;
+  background:#fff;
+  cursor:pointer;
+}
+
+#notifCount{
+  position:absolute;
+  top:-5px;
+  right:-5px;
+  background:#ff3b3b;
+  color:#fff;
+  font-size:11px;
+  padding:2px 6px;
+  border-radius:20px;
+  display:none;
+}
+
+/* profile */
+.profile{
+  text-align:center;
+  margin:30px 0;
+}
+
+.profile img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:4px solid #fff;
+  object-fit:cover;
+}
+
+.profile h1{
+  font-size:22px;
+  margin-top:12px;
+}
+
+.username{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  font-size:14px;
+  margin-top:2px;
+}
+
+/* VERIFIED ICON (BIRU) */
+.verified{
+  color:#1da1f2;      /* biru centang */
+  font-size:16px;     /* ukuran pas */
+  margin-left:4px;    /* jarak dari username */
+  vertical-align:middle;
+}
+
+.profile p{
+  color:#bbb;
+  font-size:14px;
+  margin-top:6px;
+}
+
+/* buttons */
+.buttons{
+  margin-top:20px;
+}
+
+.buttons button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:14px;
+  margin-bottom:12px;
+  font-weight:600;
+  cursor:pointer;
+  background:#fff;
+  color:#000;
+}
+
+.buttons button:active{
+  transform:scale(.96);
+}
+
+/* modal */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal.active{
+  display:flex;
+}
+
+.modal-box{
+  background:#fff;
+  color:#111;
+  width:90%;
+  max-width:360px;
+  border-radius:18px;
+  padding:20px;
+  text-align:center;
+}
+
+.modal-box img{
+  width:100%;
+  border-radius:12px;
+  margin-top:10px;
+}
+
+.close{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:#111;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* notification */
+.notif{
+  position:fixed;
+  top:70px;
+  right:20px;
+  background:#fff;
+  color:#111;
+  width:260px;
+  border-radius:14px;
+  padding:15px;
+  display:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.notif.active{
+  display:block;
+}
+
+.notif h4{
+  margin-bottom:10px;
+}
+
+.notif p{
+  font-size:13px;
+  margin-bottom:6px;
+}
