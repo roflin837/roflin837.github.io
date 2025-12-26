@@ -6,7 +6,7 @@
 }
 
 body{
-  background:#0e0e0e;
+  background: linear-gradient(135deg, #0d1117, #151c2c);
   color:#fff;
   display:flex;
   justify-content:center;
@@ -178,3 +178,4 @@ body{
   font-size:13px;
   margin-bottom:6px;
 }
+
